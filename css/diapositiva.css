@@ -1,0 +1,58 @@
+#diapositiva {
+    margin-top: 50px;
+    position: relative;
+
+}
+#diapositiva img {
+    width: 100%;
+    height: 100%;
+}
+#diapositiva .contenedor {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: rgb(23, 22, 22);
+}
+#diapositiva h2{
+    font-size: 28px;
+}
+#diapositiva a{
+    display: block;
+    width: 100px;
+    color: rgb(23, 22, 22);
+    text-decoration: none;
+    padding: 7px;
+    margin-top: 10px;
+    border: 3px solid rgb(23, 22, 22);
+}
+#diapositiva a:hover {
+    background: rgba (51,51,51,0.3);
+}
+
+@media (min-width:480px){
+    #diapositiva h2 {
+        font-size: 25px;
+    }
+    #diapositiva a {
+        margin-top: 25px;
+    }
+}
+
+@media (min-width:768px) {
+    #diapositiva {
+        height: 300px;
+        overflow: hidden;
+    }
+    #diapositiva img {
+        height: auto;
+        margin-top: -100px;
+    }
+
+}
+
+@media (min-width:1024px){
+    #diapositiva img{
+        margin-top: -200px;
+    }
+}
