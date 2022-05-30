@@ -42,7 +42,7 @@ h1{
     25%{left: 5px;}
     50%{left: 0px;}
     75%{left: 5px;}
-    75%{left: 0px;}
+    100%{left: 0px;}
 }
 
 header .contenedor{
