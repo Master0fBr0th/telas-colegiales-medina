@@ -36,6 +36,71 @@ h1{
     position: relative;
     animation-iteration-count: infinite;
 }
+.Titulo-merceria{
+    text-align: center;
+}
+
+.grid-layout{
+    height: 600px;
+    width: 50%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-areas: arriba arriba arriba
+    medio medio medio
+    abajo abajo abajo    ;
+    justify-content: space-around;
+    
+}
+
+.caja{
+    width: 150px;
+    height: 150px;
+    margin: 15px;
+    text-align: center;
+    line-height: 150px;
+    float: left;
+    display: flex;
+    flex-wrap: wrap;
+}
+.img-caja{
+    width: 143px;
+    height: 143px;
+    text-align: center;
+    line-height: 150px;
+    float: left;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.caja1{
+    grid-template-areas: arriba;
+}
+.caja2{
+    grid-template-areas: arriba;
+}
+.caja3{
+    grid-template-areas: arriba;
+}
+.caja4{
+    grid-template-areas: medio;
+}
+.caja5{
+    grid-template-areas: medio;
+}
+.caja6{
+    grid-template-areas: medio;
+}
+.caja7{
+    grid-template-areas: abajo;
+}
+.caja8{
+    grid-template-areas: abajo;
+}
+.caja9{
+    grid-template-areas: abajo;
+}
 
 @keyframes animacion-titulo {
     0%{left: 0;}
