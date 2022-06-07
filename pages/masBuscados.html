@@ -5,14 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../pages1/logo tc2.png" type="image/x-icon">
-    <title>Telas Colegiales</title>
+    <title>Mas Buscados</title>
     <link rel="stylesheet" href="../css/fontello.css">
     <link rel="stylesheet" href="../css/estilos.css">
-    <link rel="stylesheet" href="../css/masBuscados.css">
-        <!-- CSS only -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-        <!-- JavaScript Bundle with Popper -->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/masBuscados.css">
+    <link rel="stylesheet" href="../wow/animate.css">
 </head>
 <body>
     <header>
@@ -34,7 +35,9 @@
         <div class="row row-cols-1 row-cols-md-3 g-4">
             <div class="col">
             <div class="card h-100">
-                <img class="img-mas-buscado" src="../pages1/ecocuero.jpg" class="card-img-top" alt="...">
+                <div class="wow fadeIn">
+                <img class="card-img" src="../pages1/ecocuero.jpg" class="card-img-top" alt="ecocuero">
+                </div>
                 <div class="card-body">
                 <h5 class="card-title">Ecocuero</h5>
                 <p class="card-text">$$$</p>
@@ -46,7 +49,9 @@
             </div>
             <div class="col">
             <div class="card h-100">
-                <img class="img-mas-buscado" src="../pages1/gasa-algodon.jpg" class="card-img-top" alt="...">
+                <div class="wow fadeIn">
+                <img class="card-img" src="../pages1/gasa-algodon.jpg" class="card-img-top" alt="gasa de algodon">
+                </div>
                 <div class="card-body">
                 <h5 class="card-title">Gasa de Algodon</h5>
                 <p class="card-text">$$$</p>
@@ -58,7 +63,9 @@
             </div>
             <div class="col">
             <div class="card h-100">
-                <img class="img-mas-buscado" src="../pages1/viyela.webp" class="card-img-top" alt="...">
+                <div class="wow fadeIn">
+                <img class="card-img" src="../pages1/viyela.webp" class="card-img-top" alt="viyela">
+                </div>
                 <div class="card-body">
                 <h5 class="card-title">Viyela</h5>
                 <p class="card-text">$$$</p>
@@ -70,7 +77,9 @@
             </div>
             <div class="col">
                 <div class="card h-100">
-                    <img class="img-mas-buscado" src="../pages1/plastico-protector.jpg" class="card-img-top" alt="...">
+                    <div class="wow fadeIn">
+                    <img class="card-img" src="../pages1/plastico-protector.jpg" class="card-img-top" alt="plastico-protector">
+                    </div>
                     <div class="card-body">
                     <h5 class="card-title">Plastico Protector</h5>
                     <p class="card-text">$$$</p>
@@ -82,7 +91,9 @@
                 </div>
                 <div class="col">
                     <div class="card h-100">
-                        <img class="img-mas-buscado" src="../pages1/tul.jpg" class="card-img-top" alt="...">
+                        <div class="wow fadeIn">
+                        <img class="card-img" src="../pages1/tul.jpg" class="card-img-top" alt="tul">
+                        </div>
                         <div class="card-body">
                         <h5 class="card-title">Tul de Colores</h5>
                         <p class="card-text">$$$</p>
@@ -94,7 +105,9 @@
                     </div>
                     <div class="col">
                         <div class="card h-100">
-                            <img class="img-mas-buscado" src="../pages1/encaje.jpg" class="card-img-top" alt="...">
+                            <div class="wow fadeIn">
+                            <img class="card-img" src="../pages1/encaje.jpg" class="card-img-top" alt="encaje">
+                            </div>
                             <div class="card-body">
                             <h5 class="card-title">Encaje</h5>
                             <p class="card-text">$$$</p>
@@ -121,11 +134,16 @@
                 <p>telascolegiales_shop@gmail.com</p>
             </div>
             <div class="envios">
-                <a class="icon-truck"></a>
+                <p class="icon-truck"></p>
                 <p>Envios a todo el país</p>
             </div>
         </div>
 
     </footer>
+
+    <script src="../wow/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
 </body>
 </html> 

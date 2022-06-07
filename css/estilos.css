@@ -30,6 +30,10 @@ header{
     margin: auto;
 
 }
+.lienzo{
+display: flex;
+height: 50px;
+}
 
 h1{
     float: left;
@@ -80,31 +84,31 @@ h1{
 
 
 .caja1{
-    grid-template-areas: arriba;
+    grid-template-areas: "arriba";
 }
 .caja2{
-    grid-template-areas: arriba;
+    grid-template-areas: "arriba";
 }
 .caja3{
-    grid-template-areas: arriba;
+    grid-template-areas: "arriba";
 }
 .caja4{
-    grid-template-areas: medio;
+    grid-template-areas: "medio";
 }
 .caja5{
-    grid-template-areas: medio;
+    grid-template-areas: "medio";
 }
 .caja6{
-    grid-template-areas: medio;
+    grid-template-areas: "medio";
 }
 .caja7{
-    grid-template-areas: abajo;
+    grid-template-areas: "abajo";
 }
 .caja8{
-    grid-template-areas: abajo;
+    grid-template-areas: "abajo";
 }
 .caja9{
-    grid-template-areas: abajo;
+    grid-template-areas: "abajo";
 }
 
 @keyframes animacion-titulo {
