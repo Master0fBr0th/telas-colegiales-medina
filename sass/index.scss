@@ -21,6 +21,25 @@ $background-color_1: rgb(223, 113, 35);
 		left: 0px;
 	}
 }
+
+$heading: (
+	h1: 2.6em,
+	h2: 2em,
+	h3: 2.6em,
+	h4: 1,
+	h5: 0.75,
+	h6: 0.50,
+
+);
+$h1: map-get($heading, h1 );
+$h2: map-get($heading, h2 );
+$h3: map-get($heading, h3 );
+$h4: map-get($heading, h4 );
+$h5: map-get($heading, h5 );
+$h6: map-get($heading, h6 );
+
+
+
 * {
 	[class^="icon-"] {
 		&:before {
@@ -131,6 +150,12 @@ header {
 		display: flex;
 		justify-content: center;
 		flex-wrap: wrap;
+		$telas:(
+		lienzo: crimson,
+		gabardina: gray,
+		panama: green,
+		blackout: yellow,
+		);
 	}
 	article {
 		margin: 15px;
@@ -139,12 +164,21 @@ header {
 		width: 100%;
 		max-width: 280px;
 	}
+
+}
+h3{
+	font-size: $h3;
 }
 h4 {
 	text-align: center;
+	font-size: $h4;
 }
 h5 {
 	text-align: center;
+	font-size: $h5;
+}
+h6{
+	font-size: $h6;
 }
 .contenedor {
 	width: 98%;
@@ -161,6 +195,7 @@ h1 {
 	animation-delay: 4s;
 	position: relative;
 	animation-iteration-count: infinite;
+	font-size: $h1;
 }
 #menu-bar {
 	display: none;
@@ -255,6 +290,65 @@ section {
 	width: 100%;
 	margin-bottom: 25px;
 }
+@mixin threed-button($base-color){
+	$shadow: "";
+	@for $i from 1 through 4{
+	$shadow: $shadow + "#{$i}px #{$i}px 0px 2px " + darken($base-color,$i*5) + ",";
+	} 
+	$shadow : str-slice($shadow,0,str-length($shadow)-1);
+	appearance: none;
+	border:none;
+	background: $base-color;
+	box-shadow: unquote($shadow);
+}
+.boton-mixin{
+	@include threed-button(rgb(255, 64, 64));
+	font-size:18px;
+	color:white;
+	margin-left: 44%;
+}
+
+%btn {
+	width: 100px;
+	text-align: center;
+	padding: 5px 0;
+	margin: 2px auto;
+	border-radius: 2px;
+	color: #FFFFFF;
+}
+.buttons{
+	display: flex;
+	flex-direction: row;
+	justify-content: center
+}
+
+.btn_registro {
+	@extend %btn;
+	background-color: #444b52b0;
+}
+.btn_login {
+	@extend %btn;
+	background-color: #444b52b0;
+}
+.btn_codigo {
+	@extend %btn;
+	background-color: #444b52b0;
+}
+
+
+
+
+
+.container{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	height: 90vh;
+	width: 99vw;
+	border: #ffffff40 1px solid;
+}
+
 footer {
 	.contenedor {
 		width: 100%;
