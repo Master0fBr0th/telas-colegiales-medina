@@ -121,7 +121,53 @@
                 <img class="img-caja" src="./pages1/etiquetas.jpg" alt="etiquetas">
             </div>
         </section>
-        <button class="boton-mixin">Trabaja con Nosotros</button>
+        <div class="form">
+            <fieldset>
+                <h1>Simulador Cuotas+Intereses</h1>
+                <form>
+                    <div>
+                        <label for="capital">Capital 
+                            <input type="text" placeholder="Ingrese el capital prestado" id="capital">
+                            <i class="fas fa-coins"></i>
+                        </label>
+                    </div>
+                    <div>
+                        <label for="cuota">Cuotas
+                            <input type="text" placeholder="Ingrese las cuotas del prestamo" id="cuota">
+                            <i class="far fa-calendar-alt"></i>
+                        </label>
+                    </div>
+                    <div>
+                        <label for="interes">Interes
+                            <input type="text" placeholder="Ingrese el interés a generar" id="interes">
+                            <i class="fas fa-hand-holding-usd"></i>
+                        </label>
+                    </div>
+                </form>
+            <button onclick="gen_table();">Calcular</button>
+            </fieldset>
+            <hr>
+            <table class="tab">
+                <thead>
+                    <tr>
+                        <td>NRO</td>
+                        <td>CAPITAL</td>
+                        <td>INTERES</td>
+                        <td>IMPORTE A PAGAR</td>
+                    </tr>
+                </thead>
+                <tbody id="tab">
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td class="ft">TOTAL</td>
+                        <td id="t1"></td>
+                        <td id="t2"></td>
+                        <td id="t3"></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
     </main>
 
     <footer class="footer-distributed">
@@ -168,7 +214,7 @@
             </div>
         </div>
     </footer>
-
+    <script src="./index.js/index.js"></script>
     <script src="wow/wow.min.js"></script>
     <script>
     new WOW().init();
