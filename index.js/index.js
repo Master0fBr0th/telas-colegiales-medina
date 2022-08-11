@@ -6,9 +6,12 @@ const clickComprar = () =>{
     console.log("Se añadio al carrito!");
 };
 
-const compra = document.getElementById("botonComprar");
+document.querySelectorAll("#botonComprar").forEach(compra => {
+    compra.addEventListener("click", clickComprar);
+})
+//const compra = document.getElementById("botonComprar");
 
-compra.addEventListener("click", clickComprar);
+//compra.addEventListener("click", clickComprar);
 
 const form=document.querySelector("#formulario");
 const enviarFormulario=(event)=>{
