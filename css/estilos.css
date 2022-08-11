@@ -29,7 +29,7 @@ header{
 #mas-comprado h3, h4, h5{
     text-align: center;
 }
-#mas-comprado .boton-comprar{
+#mas-comprado #botonComprar{
     width: 110px;
     margin-left: 50%;
     transform: translateX(-50%);
