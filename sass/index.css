@@ -40,6 +40,12 @@
 }
 body {
   font-family: "Lato", sans-serif;
+  color: black;
+  background-color: antiquewhite;
+}
+.darkMode{
+  color: antiquewhite;
+  background-color: #191a1a;
 }
 
 header {
@@ -409,7 +415,7 @@ footer {
 .footer-links a:hover {
   color: #3F71EA;
 }
-
+/*
 .boton-mixin {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -452,7 +458,7 @@ footer {
   color: #FFFFFF;
   background-color: #444b52b0;
 }
-
+*/
 .buttons {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -540,7 +546,7 @@ footer {
     text-align: center;
   }
 }
-
+/*
 .boton-mixin {
   -webkit-appearance: none;
     -moz-appearance: none;
@@ -562,7 +568,7 @@ footer {
   border-radius: 2px;
   color: #FFFFFF;
 }
-
+*/
 .buttons {
 
   display: flex;
