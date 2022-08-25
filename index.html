@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="wow/animate.css">
     <link rel="stylesheet" href="./sass/index.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 </head>
 <body>
@@ -56,12 +57,13 @@
                     </button>
             </div>
             </section>
-<section>
+            <section>
                 <!--Dark y Light Mode-->
                 <button id="botonDarkMode" class="btn btn-dark">Dark</button> <br><br>
                 <button id="botonLightMode" class="btn btn-light">Light</button> <br><br>
                 <button id="eliminarMode" class="btn btn-light">Eliminar Tema</button> <br> <br>
-</section>
+            </section>
+
             <section class="buttons">
 <!--
                 <div class="btn_registro">Registro
@@ -81,7 +83,6 @@
                 <button class="ingresar">Ingresar</button>
                 
             </form>
-            
         </section>
 
             </section>
@@ -89,23 +90,40 @@
         <section id="mas-comprado">
             <h3>Lo Mas Comprado</h3>
             <div class="contenedor">
-                <article class="wow fadeIn">
-                    <picture class="contenedor__img--lienzo"></picture>
+                <div class="row">
+                    <main id="productos" class="col-sm-8 row"></main>
+                    <!-- Carrito -->
+                    <aside class="col-sm-4">
+                        <h2>Carrito</h2>
+                        <!-- porductos carrito -->
+                        <ul id="carrito" class="list-group"></ul>
+                        <hr>
+                        <!--total -->
+                        <p class="text-right">Total en <span id="total"></span> pesos:</p>
+                        <button id="boton-vaciar" class="btn btn-danger">Vaciar</button>
+                    </aside>
+                </div>
+            </div>
+            <!--
+
+                <div class="contenedor">
+                    <article class="wow fadeIn">
+                        <picture class="contenedor__img--lienzo"></picture>
                         <img class="lienzo" src="./pages1/lienzo.jpg" alt="lienzo natural">
-                    <h4>Lienzo</h4>
-                    <h5>$$$</h5>
+                        <h4>Lienzo</h4>
+                        <h5>$$$</h5>
                         <button id="botonComprar">Comprar</button>
                 </article>
                 <article class="wow fadeIn">
                     <picture class="contenedor__img--gabardina"></picture>
-                        <img class="gabardina" src="./pages1/gabardina.jpg" alt="gabardina natural">
+                    <img class="gabardina" src="./pages1/gabardina.jpg" alt="gabardina natural">
                     <h4>Gabardina</h4>
                     <h5>$$$</h5>
                         <button id="botonComprar">Comprar</button>
-                </article>
+                    </article>
                 <article class="wow fadeIn">
                     <picture class="contenedor__img--panama"></picture>
-                        <img class="panama" src="./pages1/panama.jpg" alt="panama natural">
+                    <img class="panama" src="./pages1/panama.jpg" alt="panama natural">
                     <h4>Panama</h4>
                     <h5>$$$</h5>
                         <button id="botonComprar">Comprar</button>
@@ -116,18 +134,19 @@
                     <h4>Blackout</h4>
                     <h5>$$$</h5>
                         <button id="botonComprar">Comprar</button>
-                </article>
-            </div>
-        </section>
-        <h3 class="Titulo-merceria">Merceria</h3>
-        <section class="grid-layout">
-            <div class="caja1">
-                <img class="img-caja" src="./pages1/almohadones.jpeg" alt="almohadones">
-            </div>
-            <div class="caja2">
-                <img class="img-caja" src="./pages1/hilos.jpeg" alt="hilos">
-            </div>
-            <div class="caja3">
+                    </article>
+                </div>
+            -->
+            </section>
+            <h3 class="Titulo-merceria">Merceria</h3>
+            <section class="grid-layout">
+                <div class="caja1">
+                    <img class="img-caja" src="./pages1/almohadones.jpeg" alt="almohadones">
+                </div>
+                <div class="caja2">
+                    <img class="img-caja" src="./pages1/hilos.jpeg" alt="hilos">
+                </div>
+                <div class="caja3">
                 <img class="img-caja" src="./pages1/agujas.jpg" alt="agujas">
             </div>
             <div class="caja4">
@@ -189,6 +208,7 @@
         </div>
     </main>
 
+
     <footer class="footer-distributed">
         <div class="footer-left">
             <h3>Telas <span>Colegiales</span></h3>
@@ -232,8 +252,9 @@
                 <a href="https://twitter.com/?lang=es"><i class="fa-fa-twitter"></i><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-.139 9.237c.209 4.617-3.234 9.765-9.33 9.765-1.854 0-3.579-.543-5.032-1.475 1.742.205 3.48-.278 4.86-1.359-1.437-.027-2.649-.976-3.066-2.28.515.098 1.021.069 1.482-.056-1.579-.317-2.668-1.739-2.633-3.26.442.246.949.394 1.486.411-1.461-.977-1.875-2.907-1.016-4.383 1.619 1.986 4.038 3.293 6.766 3.43-.479-2.053 1.08-4.03 3.199-4.03.943 0 1.797.398 2.395 1.037.748-.147 1.451-.42 2.086-.796-.246.767-.766 1.41-1.443 1.816.664-.08 1.297-.256 1.885-.517-.439.656-.996 1.234-1.639 1.697z"/></svg></a>
             </div>
         </div>
+
     </footer>
-    <script src="./index.js/index.js"></script>
+    <script src="./indice.js/index.js"></script>
     <script src="wow/wow.min.js"></script>
     <script>
     new WOW().init();
