@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Sitio web de venta de telas, articulos de merceria, almohadas, entre otros, al mejor precio.">
-    <meta name="keywords" content="TELA, TELAS, TEXTIL, TRAMAS, TELAS DE COLORES, COSTURA, TELAS DECORATIVAS, MERCERIA, TEJIDO, HILOS, BOTONES, ETIQUETAS, ALMOHADONES, ALMOHADAS, DECORACION"
-    <link rel="shortcut icon" href="./pages1/logo-tc2.png" type="image/x-icon">
-    <title>Telas Colegiales</title>
-        <!--<link rel="stylesheet" href="./css/estilos.css"> /-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="stylesheet" href="wow/animate.css">
-    <link rel="stylesheet" href="./sass/index.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
-    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Sitio web de venta de telas, articulos de merceria, almohadas, entre otros, al mejor precio.">
+        <meta name="keywords" content="TELA, TELAS, TEXTIL, TRAMAS, TELAS DE COLORES, COSTURA, TELAS DECORATIVAS, MERCERIA, TEJIDO, HILOS, BOTONES, ETIQUETAS, ALMOHADONES, ALMOHADAS, DECORACION"
+        <link rel="shortcut icon" href="./pages1/logo-tc2.png" type="image/x-icon">
+        <title>Telas Colegiales</title>
+            <!--<link rel="stylesheet" href="./css/estilos.css"> /-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <link rel="stylesheet" href="./sass/index.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+        <link rel="stylesheet" href="./css/clima.css">
 
-</head>
+    </head>
 <body>
     <header>
         <div class="contenedor">
@@ -56,36 +56,40 @@
                     <span class="visually-hidden">Next</span>
                     </button>
             </div>
-            </section>
-            <section>
-                <!--Dark y Light Mode-->
-                <button id="botonDarkMode" class="btn btn-dark">Dark</button> <br><br>
-                <button id="botonLightMode" class="btn btn-light">Light</button> <br><br>
-                <button id="eliminarMode" class="btn btn-light">Eliminar Tema</button> <br> <br>
-            </section>
-
-            <section class="buttons">
-<!--
-                <div class="btn_registro">Registro
-                </div>
-                <div class="btn_login">Login
-                </div>
-                <div class="btn_codigo">Codigo
-                </div>
-            -->
-            <section class="formularioPrueba">
-
-                <h3 id="tituloForm">Formulario de Prueba</h3>
-                <form id="formulario">
-                <input type="text"name="name"placeholder="Nombre"/>
-                <input type="text"name="email"placeholder="Email"/>
-                <input type="password" name="password" placeholder="Contraseña" />
-                <button class="ingresar">Ingresar</button>
-                
-            </form>
         </section>
 
-            </section>
+        <section>
+            <div class="theme-container shadow-dark">
+                <img id="theme-icon" src="https://www.uplooder.net/img/image/2/addf703a24a12d030968858e0879b11e/moon.svg" alt="ERR">
+            </div>
+        </section>
+        
+        <section class="weather-content">
+            <h2>Weather</h2>
+            <div class="result">
+                <!-- <p>Agregue cuidad y pais</p>
+                <h5>Clima en Argentina</h5>
+                <img src="" alt="">
+                <h2>16°C</h2>
+                <p>Max: 18°C</p>
+                <p>Min: 15°C</p>
+                -->
+            </div>
+            <form action="" method="POST" class="get-weather">
+                <input type="text" name="city" id="city" placeholder="Escribe tu ciudad...">
+                <select name= "country" id="country">
+                    <option disabled selected value="">Seleccione su Pais</option>
+                    <option value="AR">Argentina</option>
+                    <option value="CO">Colombia</option>
+                    <option value="CR">Costa Rica</option>
+                    <option value="ES">España</option>
+                    <option value="US">Estados Unidos</option>
+                    <option value="MX">México</option>
+                    <option value="PE">Perú</option>
+                </select>
+                <input type="submit" name="" id="" value="Ok">
+            </form>
+        </section>
 
         <section id="mas-comprado">
             <h3>Lo Mas Comprado</h3>
@@ -104,39 +108,7 @@
                     </aside>
                 </div>
             </div>
-            <!--
-
-                <div class="contenedor">
-                    <article class="wow fadeIn">
-                        <picture class="contenedor__img--lienzo"></picture>
-                        <img class="lienzo" src="./pages1/lienzo.jpg" alt="lienzo natural">
-                        <h4>Lienzo</h4>
-                        <h5>$$$</h5>
-                        <button id="botonComprar">Comprar</button>
-                </article>
-                <article class="wow fadeIn">
-                    <picture class="contenedor__img--gabardina"></picture>
-                    <img class="gabardina" src="./pages1/gabardina.jpg" alt="gabardina natural">
-                    <h4>Gabardina</h4>
-                    <h5>$$$</h5>
-                        <button id="botonComprar">Comprar</button>
-                    </article>
-                <article class="wow fadeIn">
-                    <picture class="contenedor__img--panama"></picture>
-                    <img class="panama" src="./pages1/panama.jpg" alt="panama natural">
-                    <h4>Panama</h4>
-                    <h5>$$$</h5>
-                        <button id="botonComprar">Comprar</button>
-                </article>
-                <article class="wow fadeIn">
-                    <picture class="contenedor__img--blackout"></picture>
-                        <img class="blackout" src="./pages1/blackout.jpg" alt="blackout">
-                    <h4>Blackout</h4>
-                    <h5>$$$</h5>
-                        <button id="botonComprar">Comprar</button>
-                    </article>
-                </div>
-            -->
+            
             </section>
             <h3 class="Titulo-merceria">Merceria</h3>
             <section class="grid-layout">
@@ -159,53 +131,6 @@
                 <img class="img-caja" src="./pages1/etiquetas.jpg" alt="etiquetas">
             </div>
         </section>
-        <div class="form">
-            <fieldset>
-                <h2>Simulador Cuotas+Intereses</h2>
-                <form>
-                    <div>
-                        <label for="capital">Capital 
-                            <input type="text" placeholder="Ingrese el capital prestado" id="capital">
-                            <i class="fas fa-coins"></i>
-                        </label>
-                    </div>
-                    <div>
-                        <label for="cuota">Cuotas
-                            <input type="text" placeholder="Ingrese las cuotas del prestamo" id="cuota">
-                            <i class="far fa-calendar-alt"></i>
-                        </label>
-                    </div>
-                    <div>
-                        <label for="interes">Interes
-                            <input type="text" placeholder="Ingrese el interés a generar" id="interes">
-                            <i class="fas fa-hand-holding-usd"></i>
-                        </label>
-                    </div>
-                </form>
-            <button onclick="gen_table();">Calcular</button>
-            </fieldset>
-            <hr>
-            <table class="tab">
-                <thead>
-                    <tr>
-                        <td>NRO</td>
-                        <td>CAPITAL</td>
-                        <td>INTERES</td>
-                        <td>IMPORTE A PAGAR</td>
-                    </tr>
-                </thead>
-                <tbody id="tab">
-                </tbody>
-                <tfoot>
-                    <tr>
-                        <td class="ft">TOTAL</td>
-                        <td id="t1"></td>
-                        <td id="t2"></td>
-                        <td id="t3"></td>
-                    </tr>
-                </tfoot>
-            </table>
-        </div>
     </main>
 
 
@@ -252,13 +177,10 @@
                 <a href="https://twitter.com/?lang=es"><i class="fa-fa-twitter"></i><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-.139 9.237c.209 4.617-3.234 9.765-9.33 9.765-1.854 0-3.579-.543-5.032-1.475 1.742.205 3.48-.278 4.86-1.359-1.437-.027-2.649-.976-3.066-2.28.515.098 1.021.069 1.482-.056-1.579-.317-2.668-1.739-2.633-3.26.442.246.949.394 1.486.411-1.461-.977-1.875-2.907-1.016-4.383 1.619 1.986 4.038 3.293 6.766 3.43-.479-2.053 1.08-4.03 3.199-4.03.943 0 1.797.398 2.395 1.037.748-.147 1.451-.42 2.086-.796-.246.767-.766 1.41-1.443 1.816.664-.08 1.297-.256 1.885-.517-.439.656-.996 1.234-1.639 1.697z"/></svg></a>
             </div>
         </div>
-
     </footer>
+<script src="./indice.js/clima.js"></script>
     <script src="./indice.js/index.js"></script>
-    <script src="wow/wow.min.js"></script>
-    <script>
-    new WOW().init();
-    </script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html> 
