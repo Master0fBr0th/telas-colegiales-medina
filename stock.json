@@ -1,0 +1,90 @@
+[
+    {
+      "id": 1,
+      "name": "Lienzo",
+      "medida": "1,50",
+      "precio": "$5100",
+      "rollo": "30/100mt",
+      "color": "Natural, Negro, Gris, Rosa, Celeste, Blanco, Verde Militar, Arena, Azul Francia, Amarillo"
+
+    },
+    {
+      "id": 2,
+      "name": "Pana",
+      "medida": "1,50",
+      "precio": "$2200",
+      "rollo": "30/100mt",
+      "color": "Natural, Negro, Gris, Rosa, Celeste, Blanco"
+
+    },
+    {
+      "id": 3,
+      "name": "Gabardina",
+      "medida": "1,50",
+      "precio": "$900",
+      "rollo": "30/100mt",
+      "color": "Natural, Negro, Gris, Rosa, Celeste, Blanco"
+
+    },
+    {
+      "id": 4,
+      "name": "Panama",
+      "medida": "3,00",
+      "precio": "$2000",
+      "rollo": "30/100mt",
+      "color": "Natural, Negro, Gris, Rosa, Celeste, Fucsia, Verde ingles, Blanco"
+
+    },
+    {
+      "id": 5,
+      "name": "Lino",
+      "medida": "1,50",
+      "precio": "$450",
+      "rollo": "30/100mt",
+      "color": "Natural, Negro, Gris, Azul, Violeta, Rosa, Celeste, Blanco"
+
+    },
+    {
+        "id": 6,
+        "name": "Blackout",
+        "medida": "1,50",
+        "precio": "$11000",
+        "rollo": "30/100mt",
+        "color": "Natural, Negro, Blanco"
+  
+      },
+      {
+        "id": 7,
+        "name": "Microfibra",
+        "medida": "1,50",
+        "precio": "$520",
+        "rollo": "30/100mt",
+        "color": "Natural, Negro, Verde Manzana, Rojo, Gris, Rosa, Celeste, Blanco"
+  
+      },
+    {
+        "id": 8,
+        "name": "Seda",
+        "medida": "1,50",
+        "precio": "$1200",
+        "rollo": "30/100mt",
+        "color": "Natural, Negro, Gris, Verde Militar, Fucsia, Rosa, Celeste, Blanco"
+      },
+      {
+        "id": 9,
+        "name": "Fustan",
+        "medida": "1,50",
+        "precio": "$700",
+        "rollo": "30/100mt",
+        "color": "Natural, Negro, Gris, Arena, Azul Marino, Rosa, Celeste, Blanco"
+  
+      },
+      {
+        "id": 10,
+        "name": "Bagun",
+        "medida": "1,40",
+        "precio": "$540",
+        "rollo": "30/100mt",
+        "color": "Natural, Negro, Gris, Rosa, Celeste, Blanco, Naranja, Amarillo"
+      }
+  ]
